@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineClick</title>
+  <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+<body>
+
+  <!-- CABECERA -->
+  <header id="cabecera">
+    <h1>CineClick</h1>
+    <p class="eslogan">Tu catálogo de cine de confianza</p>
+
+    <!-- Aquí se mostrarán los títulos rotativos (punto 2) -->
+    <div id="rotulo"></div>
+
+    <nav id="menu">
+      <a href="#" id="enlace-peliculas">Películas</a>
+      <a href="#" id="enlace-generos">Géneros</a>
+      <a href="#" id="enlace-estadisticas">Estadísticas</a>
+    </nav>
+  </header>
+
+  <!-- ZONA CENTRAL -->
+  <main id="zona-central">
+
+    <!-- Zona izquierda (2/3): pósters, películas filtradas o gráficos -->
+    <section id="zona-izquierda">
+      <p class="aviso">Pulsa una opción del menú para empezar.</p>
+    </section>
+
+    <!-- Zona derecha (1/3): ficha de película o lista de géneros -->
+    <aside id="zona-derecha">
+      <h2>Ficha / Filtros</h2>
+      <div id="contenido-derecha"></div>
+    </aside>
+
+  </main>
+
+  <!-- PIE -->
+  <footer id="pie">
+    <p>Web desarrollada por (tu nombre completo)</p>
+  </footer>
+
+  <!-- Chart.js: solo necesario para la parte de estadísticas -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

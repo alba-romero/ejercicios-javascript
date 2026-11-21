@@ -1,0 +1,43 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f2f2f2; color: #222; display: flex; flex-direction: column; min-height: 100vh; }
+
+/* Cabecera */
+#cabecera { background: #1f2a44; color: #fff; text-align: center; padding: 14px 10px 0; }
+#cabecera h1 { font-size: 2rem; }
+.eslogan { font-size: .9rem; color: #b8c2dd; margin-bottom: 8px; }
+#rotulo { background: #e8b923; color: #1f2a44; font-weight: bold; padding: 8px; min-height: 36px; margin: 8px auto; max-width: 700px; border-radius: 4px; }
+#menu { display: flex; justify-content: center; gap: 4px; background: #2e3d63; margin: 0 -10px; }
+#menu a { color: #fff; text-decoration: none; padding: 12px 22px; }
+#menu a:hover, #menu a.activo { background: #e8b923; color: #1f2a44; }
+
+/* Zona central: 2/3 + 1/3 */
+#zona-central { flex: 1; display: grid; grid-template-columns: 2fr 1fr; gap: 12px; padding: 12px; }
+#zona-izquierda { background: #fff; border-radius: 6px; padding: 12px; }
+#zona-derecha { background: #e9ecf3; border-radius: 6px; padding: 12px; }
+#zona-derecha h2 { font-size: 1.1rem; margin-bottom: 10px; }
+.aviso { color: #777; text-align: center; margin-top: 30px; }
+
+/* Rejilla de pósters / tarjetas (las crea JavaScript) */
+.rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.tarjeta { background: #fafafa; border: 1px solid #ddd; border-radius: 6px; padding: 8px; text-align: center; cursor: pointer; transition: transform .15s, box-shadow .15s; }
+.tarjeta:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,.2); }
+.tarjeta img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 4px; }
+.tarjeta h3 { font-size: .9rem; margin-top: 6px; }
+.tarjeta.seleccionada { outline: 3px solid #e8b923; }
+
+/* Ficha de película (la crea JavaScript en la zona derecha) */
+.ficha h3 { font-size: 1.3rem; margin-bottom: 4px; }
+.ficha .genero { display: inline-block; background: #1f2a44; color: #fff; font-size: .75rem; padding: 2px 8px; border-radius: 10px; margin-bottom: 8px; }
+.ficha p { font-size: .9rem; margin-bottom: 6px; }
+
+/* Selector de género */
+.selector label { font-weight: bold; display: block; margin-bottom: 6px; }
+.selector select { width: 100%; padding: 6px; }
+
+/* Gráficos */
+.contenedor-grafico { max-width: 650px; margin: 10px auto; }
+
+/* Pie */
+#pie { background: #1f2a44; color: #fff; text-align: center; padding: 14px; font-size: .9rem; }
+
+@media (max-width: 700px) { #zona-central { grid-template-columns: 1fr; } }

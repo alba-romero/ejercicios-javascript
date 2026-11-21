@@ -1,0 +1,29 @@
+Instrucciones previas: descarga la web base (index.html, carpeta estilos, carpeta img, carpeta scripts y peliculas.json). Tu código JavaScript debe ir en la carpeta scripts. Puedes usar los estilos que se proporcionan o hacer los tuyos.
+
+Funcionamiento que debes implementar:
+
+Carga el contenido de peliculas.json con fetch y guárdalo para usarlo en el resto de apartados.
+Dentro del recuadro situado bajo "Tu catálogo de cine de confianza" deben ir apareciendo los títulos de las películas del JSON. Cada título debe permanecer dos segundos, y al llegar al último se vuelve a empezar.
+Opción Películas: en la zona izquierda se muestran todos los pósters con su título, con una estructura visual adecuada. Antes de cargarlos hay que limpiar la zona.
+Al hacer click en un póster, la zona derecha muestra la ficha de esa película (título, género, año, director, duración y sinopsis). La zona derecha se limpia cada vez que se pulsa otra película.
+Opción Géneros: en la zona derecha aparece un selector desplegable con todos los géneros que hay en el JSON, sin repetir.
+Al seleccionar un género, en la zona izquierda aparecen solo las películas de ese género.
+Opción Estadísticas: la zona izquierda muestra un selector con los títulos de las películas. Al elegir una, se genera un gráfico de barras con sus tres valoraciones (crítica, público y técnica).
+En la misma opción, debajo del anterior, se genera un gráfico con todas las películas y su nota media (media de las tres valoraciones).
+
+Condiciones: está prohibido usar Internet, salvo para comprobar los gráficos de los apartados 7 y 8, que necesitan la librería Chart.js. Avisa al profesor antes de conectarte y vuelve a modo avión después. Si no avisas, el examen estará suspenso.
+
+Entrega: comprime toda la web y súbela a la tarea de Moodle.
+
+Rúbrica (10 puntos)
+Criterio	Puntos
+Estructura de la web (cabecera, zona central, pie con tu nombre)	1
+Menú con las tres opciones funcionando	0,5
+Rótulo con los títulos, 2 segundos cada uno y en bucle	1
+Películas: limpia la zona y carga todos los pósters con estructura visual adecuada	1,5
+Click en póster: limpia y muestra la ficha completa en la derecha	1
+Géneros: selector generado desde el JSON, sin repetidos	1
+Filtrado de películas por género	1
+Gráfico de las 3 valoraciones de una película (selector incluido)	1
+Gráfico de notas medias con una barra por película y medias bien calculadas	1,5
+Formateo de los gráficos (títulos, colores, leyenda)	0,5
